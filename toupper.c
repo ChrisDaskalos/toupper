@@ -27,11 +27,11 @@ int main(void)
 		exit(EXIT_FAILURE);
 	}
 	while ((ch = getc(source)) != EOF)
-    {
-        if (islower(ch))
-            ch = toupper(ch);
-        putc(ch, target);
-    }
+    	{
+       		 if (islower(ch))
+            		ch = toupper(ch);
+        	putc(ch, target);
+    	}
 
 	if (fclose(source) != 0)
         printf("Could not close file %s\n", sourcef);
