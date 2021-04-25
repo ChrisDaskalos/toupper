@@ -34,10 +34,10 @@ int main(void)
     	}
 
 	if (fclose(source) != 0)
-        printf("Could not close file %s\n", sourcef);
+        	printf("Could not close file %s\n", sourcef);
 
-    if (fclose(target) != 0)
-        printf("Could not close file %s\n", targetf);
+    	if (fclose(target) != 0)
+        	printf("Could not close file %s\n", targetf);
 
     return 0;
 
